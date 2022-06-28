@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body {
+  height: calc(100vh - 4rem);
+  background: linear-gradient(
+    45deg,
+    red,
+    orangered,
+    orange,
+    yellow,
+    lime,
+    rgb(21, 189, 21)
+  );
+}
+.container {
+  text-align: center;
+  margin-top: 4rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+.header {
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  margin-bottom: 1rem;
+}
+#info {
+  color: black;
+  text-shadow: 2px 2px 4px black;
+}
+#input {
+  width: 25vw;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.wavy {
+  animation-name: wavy;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+button {
+  background: red;
+  margin: 1.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: aliceblue;
+}
